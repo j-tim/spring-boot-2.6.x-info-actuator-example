@@ -19,6 +19,15 @@ Check the [/info](http://localhost:8080/actuator/info) actuator endpoint:
 
 ```
 curl http://localhost:8080/actuator/info | jq
+{}
+```
+
+Enable the environment info contributor by setting `management.info.env.enabled` in [](src/main/resources/application.yml) to `true`
+
+Start the application again:
+
+```
+./mvnw spring-boot:run
 ```
 
 From the Spring Boot 2.6 [release notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.6-Release-Notes#actuator-env-infocontributor-disabled-by-default)
