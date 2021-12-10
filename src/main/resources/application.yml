@@ -7,8 +7,9 @@ management:
     # In older version of Spring Boot the environment contributor was enabled by default!
     # Since Spring Boot 2.6 the info env contributor is disabled by default.
     # We have to explicitly enable it so see the details!
-    env:
-      enabled: true
+    # Commented out the for demo purposes to show the default behaviour
+#    env:
+#      enabled: true
     # Was already disabled by default no changes in Spring Boot 2.6
     java:
       enabled: false
