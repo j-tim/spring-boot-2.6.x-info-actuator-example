@@ -25,3 +25,7 @@ From the Spring Boot 2.6 [release notes](https://github.com/spring-projects/spri
 
 > Actuator Env InfoContributor Disabled by Default
 The env info contributor is now disabled by default. To enable it, set management.info.env.enabled to true.
+
+## Spring Boot 2.5.x example
+
+See branch: `spring-boot.2.5.x`
