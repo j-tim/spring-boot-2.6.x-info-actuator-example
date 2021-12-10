@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: example-app
+
+management:
+  info:
+    # In older version of Spring Boot the environment contributor was enabled by default!
+    # Since Spring Boot 2.6 the info env contributor is disabled by default.
+    # We have to explicitly enable it so see the details!
+    env:
+      enabled: true
+    # Was already disabled by default no changes in Spring Boot 2.6
+    java:
+      enabled: false
+    # Enabled by default
+    # Requires you to have: Generate Build Information
+    # See: https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.build.generate-info
+    build:
+      enabled: false
+    # Enabled by default
+    # Requires you to have the: pl.project13.maven:git-commit-id-plugin in your project
+    # See: https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.build.generate-git-info
+    git:
+      enabled: false
+
+  endpoints:
+    web:
+      exposure:
+        include: info
+
+# This info details we would like to expose
+info:
+  application:
+    name: ${spring.application.name}
+    description: Very cool Spring Boot application
+    version: '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+    spring-boot-version: '@project.parent.version@'
+
