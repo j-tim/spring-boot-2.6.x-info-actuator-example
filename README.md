@@ -1,7 +1,7 @@
 # Spring Boot 2.6.x Actuator info endpoint
 
 Example project Spring Boot 2.6 to play around with the actuator info contributor.
-See blogpost: 
+See blogpost: [Help, my Spring Boot info actuator endpoint is enabled, but I don’t see any environment details!](https://medium.com/@TimvanBaarsen/help-my-spring-boot-info-actuator-endpoint-is-enabled-but-i-dont-see-any-environment-details-c2d41a7b24d7)
 
 Build the project:
 
